@@ -1,0 +1,149 @@
+/* ========== RESET ========== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ========== VARIABLES ========== */
+  :root {
+    --bg: #ffffff;
+    --text: #111111;
+    --accent:#6f5762;
+    --muted: #666666;
+  }
+  
+  /* ========== GLOBAL STYLES ========== */
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; 
+  }
+  
+  /* ========== HEADINGS ========== */
+  h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  
+  /* ========== BUTTONS ========== */
+  .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #6A1F3B;
+    transform: translateY(-2px);
+    color: white;
+  }
+  
+  /* ========== SECTIONS ========== */
+  section {
+    margin-top: 60px;
+  }
+  
+  /* ========== UTILITIES ========== */
+  .center {
+    text-align: center;
+  }
+  .button-row {
+    display: flex;
+    gap: 16px;          /* space between buttons */
+    margin-top: 140px;
+    justify-content: center;
+  }
+  @media (max-width: 600px) {
+    .button-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }  
+  /* Top-left button */
+.home-top {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Bottom-center button */
+  .home-bottom {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* Banner */
+  .banner {
+    height: 1.5in;
+    background-color: #EFE4D8;
+  
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  
+    position: relative;
+    overflow: visible;
+  }
+  
+  /* Title inside banner */
+  .banner-title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #111111;
+    margin: 50px;
+  }
+  
+  
+  /* Circular image */
+  .profile-pic {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;          /* makes it a circle */
+    object-fit: cover;           /* crops image nicely */
+    border: 0px solid #654321;     /* optional frame */
+    position: relative;
+    top: 25px
+  }
+  .page-title {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .media-pic {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;          /* makes it a circle */
+    object-fit: cover;           /* crops image nicely */
+    border: 0px solid #654321;     /* optional frame */
+    position: relative;
+    top: 50px
+  }
+  .quote {
+    border-left: 4px solid #660033;
+    margin: 20px auto;
+    padding-left: 24px;
+    font-style: italic;
+  }
+  
+
+  
+  .quote-author {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 16px;
+    color: #555;
+  }
+  
