@@ -17,10 +17,10 @@
   body {
     background-color: var(--bg);
     color: var(--text);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     line-height: 1.6;
     margin: 0; 
-  }
+}
   
   /* ========== HEADINGS ========== */
   h1 {
@@ -62,8 +62,8 @@
   }
   .button-row {
     display: flex;
-    gap: 16px;          /* space between buttons */
-    margin-top: 140px;
+    gap: 16px;      
+    margin-top: 30px;
     justify-content: center;
   }
   @media (max-width: 600px) {
@@ -72,6 +72,36 @@
       align-items: center;
     }
   }  
+
+.menu-item {
+  position: relative;
+}
+
+.popover {
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+
+  width: 280px;
+  padding: 15px;
+
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease;
+  z-index: 100;
+}
+
+.menu-item:hover .popover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+}
+
   /* Top-left button */
 .home-top {
     position: fixed;
@@ -90,6 +120,7 @@
   .banner {
     height: 1.5in;
     background-color: #EFE4D8;
+    text-align: center;
   
     display: flex;
     justify-content: center;
@@ -101,10 +132,10 @@
   
   /* Title inside banner */
   .banner-title {
-    font-size: 56px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 600;
     color: #111111;
-    margin: 50px;
+    margin: 30px;
   }
   
   
@@ -146,4 +177,5 @@
     font-size: 16px;
     color: #555;
   }
+  #testimonials { scroll-margin-top: 40px; }
   

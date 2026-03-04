@@ -5,6 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .video-section {
+  padding: 60px 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+    .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    }
+
+    .video-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    }
+        #testimonials, #plf { scroll-margin-top: 40px; }
+
+        .testimonials, .plf-section {
+          padding: 72px 24px;
+          max-width: 960px;
+          margin: 0 auto;
+          font-family: 'DM Sans', sans-serif;
+        }
+
+        .t-heading {
+          font-family: 'Lora', serif;
+          font-size: clamp(28px, 5vw, 42px);
+          font-weight: 400;
+          margin: 0 0 8px;
+          color: inherit;
+        }
+
+        .t-sub {
+          font-size: 13px;
+          font-weight: 300;
+          letter-spacing: 0.08em;
+          opacity: 0.5;
+          margin: 0 0 48px;
+        }
+
+        .t-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+          gap: 20px;
+        }
+
+        .t-card {
+          padding: 28px 24px;
+          border: 1px solid rgba(0,0,0,0.1);
+          border-radius: 12px;
+        }
+
+        .t-card p {
+          font-family: 'DM Sans', sans-serif;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 1.75;
+          margin: 0;
+          color: inherit;
+        }
+
+        .t-card strong {
+          font-weight: 600;
+          color: inherit;
+        }
+
+        .section-divider {
+          max-width: 960px;
+          margin: 0 auto;
+          border: none;
+          border-top: 1px solid rgba(0,0,0,0.08);
+        }
+        .section-links {
+            display: flex;
+            gap: 16px;
+            padding: 20px 24px 0;
+}
+    </style>
 </head>
 <body>
     <div class="banner">
@@ -12,6 +97,130 @@
     </div> 
     <!-- Top-left HOME -->
     <a href="../index.html" class="btn home-top">HOME</a>
+    <div class="section-links">
+        <a href="#testimonials">My Orientation Students' Experiences</a>
+        <a href="#plf">My PLF Peers' Experiences</a>
+      </div>
+      <section class="video-section">
+        <h2 class="t-heading">My Speech to the Incoming Class</h2>
+        <p class="t-sub">UCLA New Student Orientation</p>
+        <p class="video-desc">As part of my favorite segment of UCLA's new student orientation, the "University Community Panel" or UCP, I had the privilege of sharing my journey to and through UCLA. During UCP, three New Student Advisors (NSA) share their stories to the orientation session of 500+ incoming UCLA students. My second summer as an NSA, I shared my ever complex and unfolding story twice with the hopes of encouraging incoming students to recognize that they too have a story, one that started long before their arrival at college and one that is continued to be written.</p>
+        <div class="video-wrapper">
+            <iframe
+            src="https://www.youtube.com/embed/3Iu2mT6fhzI"
+            title="Speech to the Incoming Class"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+    <!-- TESTIMONIALS SECTION — paste into your website -->
 
+<section class="testimonials" id = "testimonials">
+  <h2 class="t-heading">UCLA Gold New Student Advisor</h2>
+  <p class="t-sub">Student Testimonials</p>
+
+  <div class="t-grid">
+
+    <div class="t-card">
+      <p>Raina was <strong>extremely helpful and friendly</strong> throughout this entire event. Happy to have had her as my NSA.</p>
+    </div>
+
+    <div class="t-card">
+      <p>She was always supportive and willing to help, and she <strong>went above and beyond</strong> in class selection and making us feel welcomed at UCLA. She is a large part of why I'm excited to arrive at UCLA in the fall!</p>
+    </div>
+
+    <div class="t-card">
+      <p>I wholeheartedly believe I had <strong>THE BEST NSA!</strong> She was very kind and made me feel more comfortable. She also gave me great advice when it came to work study and equipped me with many resources!!</p>
+    </div>
+
+    <div class="t-card">
+      <p>I absolutely loved my NSA! She was <strong>extremely helpful</strong> and helped me feel more at ease with transitioning to UCLA.</p>
+    </div>
+
+    <div class="t-card">
+      <p>My NSA was <strong>so reassuring and helpful.</strong></p>
+    </div>
+
+    <div class="t-card">
+      <p>Raina was an awesome NSA that made my orientation session <strong>so much more fun</strong> than I went in believing initially.</p>
+    </div>
+
+    <div class="t-card">
+      <p>No recommendations — my New Student Advisor was <strong>lovely, very helpful, and welcoming.</strong> I value her knowledge and guidance, which will contribute to my success at UCLA.</p>
+    </div>
+
+    <div class="t-card">
+      <p>I came to orientation daunted by the newness and sheer size of UCLA but you genuinely made me feel <strong>welcomed, cared for</strong> and I can't wait for what's to come.</p>
+    </div>
+
+    <div class="t-card">
+      <p>Coming into orientation I was a bit nervous because I'm more on the shy side but like you said, I just had to <strong>"embrace the uncomfort."</strong></p>
+    </div>
+
+    <div class="t-card">
+      <p>You did so good as an advisor, and I deeply appreciate the fact that you accommodated my children for dinner. It was another <strong>unforgettable day</strong> in the UCLA journey for me.</p>
+    </div>
+
+    <div class="t-card">
+      <p>You were an awesome NSA and <strong>super helpful in my class selection process.</strong> More importantly, you made me even more excited to come to UCLA.</p>
+    </div>
+
+    <div class="t-card">
+      <p>I definitely feel <strong>a lot more confident</strong> going into my first quarter. Good luck with your other orientation groups!!</p>
+    </div>
+
+    <div class="t-card">
+      <p>All the support you provided made this orientation session <strong>fantastic!</strong></p>
+    </div>
+
+    <div class="t-card">
+      <p>Without you I <strong>wouldn't be this prepared</strong> for the incoming year.</p>
+    </div>
+
+    <div class="t-card">
+      <p>Your advice was very valuable and I enjoyed being in your group. Also thank you for the resource links — they will help me <strong>make the most of my experience here at UCLA.</strong></p>
+    </div>
+  </div>
+</section>
+<hr class="section-divider">
+
+    <!-- PLF TESTIMONIALS -->
+    <section class="plf-section" id="plf">
+      <h2 class="t-heading">UCLA Peer Learning Facilitator</h2>
+      <p class="t-sub"> Math 32A Peer Testimonials</p>
+
+      <div class="t-grid">
+
+        <div class="t-card">
+          <p>Something really helpful that Raina has done is her <strong>little review sessions usually at the start of each session</strong> to help us practice the concepts from the first couple weeks. They have definitely helped me memorize the steps and <strong>made my studying simpler.</strong></p>
+        </div>
+
+        <div class="t-card">
+          <p>I really enjoy that in person we are able to participate in a <strong>collaborative environment</strong> where we can guide our peers in a friendly manner.</p>
+        </div>
+
+        <div class="t-card">
+          <p>I think she's doing an <strong>amazing job.</strong></p>
+        </div>
+
+        <div class="t-card">
+          <p>Raina has been able to help me <strong>understand everything up to now.</strong></p>
+        </div>
+
+        <div class="t-card">
+          <p><strong>Takes time to explain.</strong> keeps everyone <strong> engaged - motivates us,</strong> i don’t feel judged</p>
+        </div>
+
+        <div class="t-card">
+          <p><strong>Being really supportive</strong> and <strong>easy to understand</strong> when explaining.</p>
+        </div>
+
+        <div class="t-card">
+          <p>Engaging with us and <strong>making sure we all understand before moving on.</strong></p>
+        </div>
+
+      </div>
+    </section>
 </body>
 </html>
