@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .video-section {
+       padding: 60px 24px;
+       max-width: 960px;
+       margin: 0 auto;
+       }
+
+       .video-wrapper {
+       position: relative;
+       padding-bottom: 56.25%; /* 16:9 ratio */
+       height: 0;
+       overflow: hidden;
+       border-radius: 12px;
+       }
+
+       .video-wrapper iframe {
+       position: absolute;
+       top: 0; left: 0;
+       width: 100%;
+       height: 100%;
+       }
+       </style>
 </head>
 <body>
     <div class="banner">
@@ -12,6 +34,42 @@
     </div> 
     <!-- Top-left HOME -->
     <a href="../index.html" class="btn home-top">HOME</a>
-
 </body>
+<section class="projects-container">
+
+    <div class="project-card">
+  
+      <h2 class="project-title">Chutes & Ladders Probability Simulation</h2>
+  
+      <img src="../images/chutes&ladders.png" 
+           alt="Chutes and Ladders Heatmap"
+           class="project-img">
+  
+      <p class="project-desc">
+        Modeled the childhood board game in R then simulated thousands of games to create a heatmaps after x number of rolls and analyzed most used chutes and ladders.
+      </p>
+  
+      <a href="https://github.com/raina13-cell/chutes-ladders"
+         target="_blank"
+         class="btn">
+         View on GitHub
+      </a>
+  
+    </div>
+  
+  </section>
+ <section class="video-section">
+        <h2 class="t-heading">My Speech to the Incoming Class</h2>
+        <p class="t-sub">UCLA New Student Orientation</p>
+        <p class="video-desc">As part of my favorite segment of UCLA's new student orientation, the University Community Panel (UCP), I had the privilege of sharing my journey to and through UCLA. During UCP, three New Student Advisors (NSA) share their stories to the orientation session of 500+ incoming Bruins. My second summer as an NSA, I shared my ever complex and unfolding story twice in hopes of encouraging incoming students to recognize that they too have a story, one that started long before their arrival at college and one that is continued to be written.</p>
+        <div class="video-wrapper">
+            <iframe
+            src="https://www.youtube.com/embed/3Iu2mT6fhzI"
+            title="Speech to the Incoming Class"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
 </html>
